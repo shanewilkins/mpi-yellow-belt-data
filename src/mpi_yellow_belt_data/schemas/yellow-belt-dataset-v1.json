@@ -1,0 +1,183 @@
+{
+  "$defs": {
+    "DatasetFile": {
+      "additionalProperties": false,
+      "dependentRequired": {
+        "columns": [
+          "rows"
+        ],
+        "rows": [
+          "columns"
+        ]
+      },
+      "properties": {
+        "bytes": {
+          "minimum": 0,
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "columns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Columns",
+          "type": "array",
+          "uniqueItems": true
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "rows": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Rows",
+          "type": "integer"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "title": "DatasetFile",
+      "type": "object"
+    },
+    "PreservedProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "baseline_lockfile_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Baseline Lockfile Sha256",
+          "type": "string"
+        },
+        "baseline_receipt": {
+          "title": "Baseline Receipt",
+          "type": "string"
+        },
+        "baseline_source_commit": {
+          "pattern": "^[a-f0-9]{40}$",
+          "title": "Baseline Source Commit",
+          "type": "string"
+        },
+        "classification": {
+          "const": "synthetic",
+          "title": "Classification",
+          "type": "string"
+        },
+        "generation": {
+          "$ref": "#/$defs/RiversideConfig"
+        },
+        "runtime_versions": {
+          "additionalProperties": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minProperties": 1,
+          "title": "Runtime Versions",
+          "type": "object"
+        }
+      },
+      "required": [
+        "baseline_source_commit",
+        "baseline_lockfile_sha256",
+        "baseline_receipt",
+        "classification",
+        "generation",
+        "runtime_versions"
+      ],
+      "title": "PreservedProvenance",
+      "type": "object"
+    },
+    "RiversideConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "end_date": {
+          "const": "2026-03-31",
+          "title": "End Date",
+          "type": "string"
+        },
+        "row_count": {
+          "const": 1484,
+          "title": "Row Count",
+          "type": "integer"
+        },
+        "seed": {
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        },
+        "start_date": {
+          "const": "2025-10-01",
+          "title": "Start Date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "seed",
+        "row_count",
+        "start_date",
+        "end_date"
+      ],
+      "title": "RiversideConfig",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "const": "riverside",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "data_schema": {
+      "const": "riverside-preserved-v1",
+      "title": "Data Schema",
+      "type": "string"
+    },
+    "files": {
+      "items": {
+        "$ref": "#/$defs/DatasetFile"
+      },
+      "maxItems": 1,
+      "minItems": 1,
+      "title": "Files",
+      "type": "array"
+    },
+    "observation_window": {
+      "minLength": 1,
+      "title": "Observation Window",
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "#/$defs/PreservedProvenance"
+    },
+    "schema_version": {
+      "maximum": 1,
+      "minimum": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "version": {
+      "const": "1.0.0",
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "version",
+    "data_schema",
+    "observation_window",
+    "provenance",
+    "files"
+  ],
+  "title": "DatasetManifest",
+  "type": "object"
+}

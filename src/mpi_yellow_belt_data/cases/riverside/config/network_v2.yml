@@ -1,0 +1,59 @@
+seed: 20261105
+base_source_revision: 0de37a6a111305dedf95c9f1c54b1558556f20e5
+annual_referrals: 100000
+new_episodes: 150000
+inherited_episodes: 2000
+start_date: '2025-01-01'
+centralization_date: '2025-07-01'
+initial_cutoff: '2025-12-31'
+investigation_cutoff: '2026-03-31'
+pilot_date: '2026-04-01'
+end_date: '2026-06-30'
+affiliated_sites: 24
+independent_practices: 60
+primary_care_clinician_fte: 110
+primary_care_visits_per_day: 18
+clinical_days_per_year: 210
+coordination_fte: 24
+coordination_productive_hours_per_year: 1400
+source_weights:
+  affiliated_primary_care: 52
+  independent_practice: 38
+  ed_followup: 6
+  other_specialty: 4
+# [percentage of new episodes, new-patient slots per weekday,
+#  probability of clinical clarification after administrative completeness]
+specialties:
+  cardiology: [12, 37, 0.12]
+  gastroenterology: [10, 30, 0.22]
+  neurology: [8, 21, 0.26]
+  orthopedics: [12, 42, 0.10]
+  endocrinology: [5, 13, 0.20]
+  pulmonology: [6, 18, 0.18]
+  dermatology: [6, 20, 0.10]
+  urology: [4, 14, 0.12]
+  general_surgery: [4, 14, 0.13]
+  rheumatology: [4, 10, 0.25]
+  ophthalmology: [4, 14, 0.08]
+  otolaryngology: [4, 14, 0.12]
+  nephrology: [3, 10, 0.18]
+  hematology: [2, 7, 0.20]
+  oncology: [2, 7, 0.15]
+  infectious_disease: [1, 4, 0.23]
+  allergy: [1, 4, 0.12]
+  sleep_medicine: [2, 6, 0.18]
+  pain_medicine: [2, 6, 0.20]
+  physical_medicine: [1, 4, 0.10]
+  vascular_surgery: [1, 4, 0.15]
+  colorectal_surgery: [1, 4, 0.15]
+  plastic_surgery: [1, 4, 0.10]
+  bariatric_surgery: [1, 4, 0.20]
+  gynecology: [1, 4, 0.12]
+  behavioral_health: [1, 3, 0.20]
+  geriatrics: [1, 4, 0.18]
+pilot:
+  source_sites: [AP01, AP02, AP03, AP04]
+  specialties: [cardiology, gastroenterology]
+  fidelity: 0.8
+  additional_minutes_per_episode: 2
+audit_probability: 0.008

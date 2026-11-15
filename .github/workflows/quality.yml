@@ -1,0 +1,64 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.9"
+          enable-cache: true
+
+      - name: Install Python
+        run: uv python install 3.15
+
+      - name: Verify lockfile
+        run: uv lock --check
+
+      - name: Install development and generation dependencies
+        run: uv sync --locked --extra generation --extra learner
+
+      - name: Lint
+        run: uv run --locked ruff check .
+
+      - name: Check formatting
+        run: uv run --locked ruff format --check .
+
+      - name: Type-check
+        run: uv run --locked --extra generation ty check
+
+      - name: Check architecture
+        run: uv run --locked tach check
+
+      - name: Check generated contract schemas
+        run: uv run --locked python -m mpi_yellow_belt_data.contracts --check
+
+      - name: Validate selected evidence
+        run: uv run --locked --extra validation mpi-yellow-belt-data validate riverside
+
+      - name: Test
+        run: uv run --locked --extra generation --extra learner pytest
+
+      - name: Build distributions
+        run: uv build
+
+      - name: Smoke-test base wheel outside checkout
+        run: |
+          uv venv --python 3.15 "$RUNNER_TEMP/yb-base"
+          uv pip install --python "$RUNNER_TEMP/yb-base/bin/python" dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/yb-base/bin/mpi-yellow-belt-data" list
+          "$RUNNER_TEMP/yb-base/bin/mpi-yellow-belt-data" check riverside

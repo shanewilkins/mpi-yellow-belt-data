@@ -1,0 +1,133 @@
+{
+  "$defs": {
+    "Archive": {
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "url": {
+          "pattern": "^https://",
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "sha256"
+      ],
+      "title": "Archive",
+      "type": "object"
+    },
+    "DatasetPin": {
+      "additionalProperties": false,
+      "properties": {
+        "manifest_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Manifest Sha256",
+          "type": "string"
+        },
+        "version": {
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$",
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "manifest_sha256"
+      ],
+      "title": "DatasetPin",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "aliases": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "object"
+    },
+    "archive": {
+      "$ref": "#/$defs/Archive",
+      "default": null
+    },
+    "chapters": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Chapters",
+      "type": "array"
+    },
+    "dataset": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/DatasetPin"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "entry_points": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Entry Points",
+      "type": "object"
+    },
+    "id": {
+      "const": "riverside",
+      "title": "Id",
+      "type": "string"
+    },
+    "kind": {
+      "const": "synthetic",
+      "title": "Kind",
+      "type": "string"
+    },
+    "learner_files": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Learner Files",
+      "type": "object"
+    },
+    "schema_version": {
+      "maximum": 1,
+      "minimum": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array",
+      "uniqueItems": true
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "kind",
+    "sources",
+    "chapters",
+    "dataset",
+    "entry_points"
+  ],
+  "title": "CaseDefinition",
+  "type": "object"
+}

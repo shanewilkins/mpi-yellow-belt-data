@@ -1,0 +1,17 @@
+{
+  "initial": {
+    "referrals": 102187,
+    "events": 843169,
+    "appointments": 78503
+  },
+  "investigation": {
+    "referrals": 127837,
+    "events": 1094172,
+    "appointments": 99309
+  },
+  "followup": {
+    "referrals": 152000,
+    "events": 1329989,
+    "appointments": 118689
+  }
+}

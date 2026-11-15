@@ -1,0 +1,14 @@
+schema_version: 1
+id: riverside
+title: Riverside specialist referrals
+kind: synthetic
+sources:
+- model/referrals.py
+- config/baseline.yml
+chapters: []
+dataset:
+  version: 1.0.0
+  manifest_sha256: c6ac40ea19df3e9bb46e802d74442460580094332e78bcaca8b7d6c7f2bf98a1
+entry_points: {}
+aliases: {}
+learner_files: {}

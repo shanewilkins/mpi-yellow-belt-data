@@ -1,0 +1,314 @@
+{
+  "coordination_hours": 47443.7,
+  "coordination_planning_hours_18_months": 50400.0,
+  "counts": {
+    "inherited": 2000,
+    "new": 150000,
+    "outcome:cancelled": 7836,
+    "outcome:completed": 94151,
+    "outcome:declined": 8825,
+    "outcome:no_show": 10603,
+    "outcome:outside": 13101,
+    "outcome:pending_at_end": 17484,
+    "pilot_delivered": 365,
+    "pilot_eligible": 494,
+    "source:affiliated_primary_care": 77786,
+    "source:ed_followup": 9021,
+    "source:independent_practice": 57248,
+    "source:other_specialty": 5945,
+    "specialty:allergy": 1424,
+    "specialty:bariatric_surgery": 1490,
+    "specialty:behavioral_health": 1472,
+    "specialty:cardiology": 18149,
+    "specialty:colorectal_surgery": 1468,
+    "specialty:dermatology": 8809,
+    "specialty:endocrinology": 7559,
+    "specialty:gastroenterology": 15002,
+    "specialty:general_surgery": 6262,
+    "specialty:geriatrics": 1516,
+    "specialty:gynecology": 1528,
+    "specialty:hematology": 2970,
+    "specialty:infectious_disease": 1428,
+    "specialty:nephrology": 4469,
+    "specialty:neurology": 12135,
+    "specialty:oncology": 3013,
+    "specialty:ophthalmology": 5999,
+    "specialty:orthopedics": 18156,
+    "specialty:otolaryngology": 6032,
+    "specialty:pain_medicine": 2974,
+    "specialty:physical_medicine": 1511,
+    "specialty:plastic_surgery": 1552,
+    "specialty:pulmonology": 8890,
+    "specialty:rheumatology": 5800,
+    "specialty:sleep_medicine": 2961,
+    "specialty:urology": 5950,
+    "specialty:vascular_surgery": 1481
+  },
+  "extract_rows": {
+    "followup/appointments": 118689,
+    "followup/audit": 2966,
+    "followup/capacity": 14742,
+    "followup/complaints": 5289,
+    "followup/events": 1329989,
+    "followup/referrals": 152000,
+    "initial/appointments": 78503,
+    "initial/audit": 792,
+    "initial/capacity": 9855,
+    "initial/complaints": 3423,
+    "initial/events": 843169,
+    "initial/referrals": 102187,
+    "investigation/appointments": 99309,
+    "investigation/audit": 1802,
+    "investigation/capacity": 12285,
+    "investigation/complaints": 4399,
+    "investigation/events": 1094172,
+    "investigation/referrals": 127837
+  },
+  "initial_actual_outside_care_contributor_only": 8418,
+  "initial_inherited_referrals": 2000,
+  "initial_new_referrals": 100187,
+  "initial_recorded_outside_care_reports": 2764,
+  "initial_review_confirmations_without_outside_report": 41,
+  "initial_waits_by_specialty": [
+    {
+      "episodes": 974,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "allergy"
+    },
+    {
+      "episodes": 1019,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "bariatric_surgery"
+    },
+    {
+      "episodes": 981,
+      "median_booked_wait_days": 18.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 24.0,
+      "specialty": "behavioral_health"
+    },
+    {
+      "episodes": 12391,
+      "median_booked_wait_days": 10.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 12.0,
+      "specialty": "cardiology"
+    },
+    {
+      "episodes": 1006,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 9.0,
+      "specialty": "colorectal_surgery"
+    },
+    {
+      "episodes": 5962,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 9.0,
+      "specialty": "dermatology"
+    },
+    {
+      "episodes": 5182,
+      "median_booked_wait_days": 45.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 89.0,
+      "specialty": "endocrinology"
+    },
+    {
+      "episodes": 10298,
+      "median_booked_wait_days": 14.0,
+      "median_observed_admin_to_ready_days": 6.0,
+      "p90_booked_wait_days": 16.0,
+      "specialty": "gastroenterology"
+    },
+    {
+      "episodes": 4257,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "general_surgery"
+    },
+    {
+      "episodes": 1006,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "geriatrics"
+    },
+    {
+      "episodes": 1039,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "gynecology"
+    },
+    {
+      "episodes": 2033,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 9.0,
+      "specialty": "hematology"
+    },
+    {
+      "episodes": 990,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "infectious_disease"
+    },
+    {
+      "episodes": 3035,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "nephrology"
+    },
+    {
+      "episodes": 8154,
+      "median_booked_wait_days": 37.0,
+      "median_observed_admin_to_ready_days": 6.0,
+      "p90_booked_wait_days": 75.0,
+      "specialty": "neurology"
+    },
+    {
+      "episodes": 2098,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 9.0,
+      "specialty": "oncology"
+    },
+    {
+      "episodes": 4093,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "ophthalmology"
+    },
+    {
+      "episodes": 12330,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "orthopedics"
+    },
+    {
+      "episodes": 4120,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "otolaryngology"
+    },
+    {
+      "episodes": 1973,
+      "median_booked_wait_days": 10.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 16.0,
+      "specialty": "pain_medicine"
+    },
+    {
+      "episodes": 1020,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "physical_medicine"
+    },
+    {
+      "episodes": 1065,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "plastic_surgery"
+    },
+    {
+      "episodes": 6089,
+      "median_booked_wait_days": 18.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 22.0,
+      "specialty": "pulmonology"
+    },
+    {
+      "episodes": 3936,
+      "median_booked_wait_days": 42.0,
+      "median_observed_admin_to_ready_days": 6.0,
+      "p90_booked_wait_days": 82.0,
+      "specialty": "rheumatology"
+    },
+    {
+      "episodes": 2058,
+      "median_booked_wait_days": 9.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 12.0,
+      "specialty": "sleep_medicine"
+    },
+    {
+      "episodes": 4070,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "urology"
+    },
+    {
+      "episodes": 1008,
+      "median_booked_wait_days": 7.0,
+      "median_observed_admin_to_ready_days": 5.0,
+      "p90_booked_wait_days": 8.0,
+      "specialty": "vascular_surgery"
+    }
+  ],
+  "interpretation_limits": "Descriptive synthetic model checks; conditional waits exclude missing stages and unbooked cases. They are not causal estimates or a required learner conclusion.",
+  "journeys": {
+    "administrative_complete_but_clinical_work_remains": "RV2-0051638",
+    "future_appointment_outcome_unknown": "RV2-0072213",
+    "outside_care_found_by_review": "RV2-0001810",
+    "prompt_internal_care": "RV2-0002001",
+    "specialty_capacity_wait": "RV2-0016469"
+  },
+  "modeled_fraction_of_planning_hours": 0.941,
+  "observed_events": {
+    "admin_complete": 135270,
+    "appointment_booked": 107067,
+    "authorization_received": 31927,
+    "authorization_requested": 32490,
+    "awaiting_response": 6673,
+    "booking_requested": 106796,
+    "cancelled": 7055,
+    "clinical_clarification_requested": 21563,
+    "clinical_ready": 134251,
+    "clinical_response_received": 21136,
+    "clinical_review": 134698,
+    "contact_attempt": 170096,
+    "documents_received": 25451,
+    "documents_requested": 25844,
+    "internal_visit": 93889,
+    "no_show": 9611,
+    "order_received": 152000,
+    "outside_care_reported": 4428,
+    "patient_declined": 7917,
+    "reminder_sent": 101827
+  },
+  "worked_pilot_descriptive_comparison": {
+    "baseline": {
+      "documented_internal_care_within_30_days": 110,
+      "enrollment_end": "2026-02-28",
+      "enrollment_start": "2026-01-01",
+      "episodes": 331,
+      "median_admin_to_review_days": 5.0,
+      "median_booked_wait_days": 18.0,
+      "paired_handoff_records": 331
+    },
+    "pilot": {
+      "documented_internal_care_within_30_days": 116,
+      "enrollment_end": "2026-05-31",
+      "enrollment_start": "2026-04-01",
+      "episodes": 339,
+      "median_admin_to_review_days": 3.0,
+      "median_booked_wait_days": 17.0,
+      "paired_handoff_records": 339
+    }
+  }
+}

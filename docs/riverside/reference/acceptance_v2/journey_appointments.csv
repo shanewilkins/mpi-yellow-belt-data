@@ -1,0 +1,5 @@
+appointment_id,referral_id,booked_date,appointment_date,outcome,outcome_recorded_date
+AT-RV2-0002001,RV2-0002001,2025-01-02,2025-01-09,completed,2025-01-10
+AT-RV2-0016469,RV2-0016469,2025-03-18,2025-04-15,completed,2025-04-16
+AT-RV2-0051638,RV2-0051638,2025-07-25,2025-08-07,completed,2025-08-08
+AT-RV2-0072213,RV2-0072213,2025-10-24,2026-01-05,,

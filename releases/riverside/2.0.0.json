@@ -1,0 +1,499 @@
+{
+  "case_id": "riverside",
+  "data_schema": "riverside-linked-v2",
+  "files": [
+    {
+      "bytes": 8165461,
+      "columns": [
+        "appointment_id",
+        "referral_id",
+        "booked_date",
+        "appointment_date",
+        "outcome",
+        "outcome_recorded_date"
+      ],
+      "path": "followup/appointments.csv",
+      "rows": 118689,
+      "sha256": "05980d1d7f63583b268d5801d7ff24c7ad1050b806bee67eda549efac44160f2"
+    },
+    {
+      "bytes": 277609,
+      "columns": [
+        "audit_id",
+        "referral_id",
+        "review_date",
+        "finding",
+        "evidence_source",
+        "care_date"
+      ],
+      "path": "followup/audit.csv",
+      "rows": 2966,
+      "sha256": "f9f3fa7ec67ea463bcafdaec721352b522be95e3268eb508fa4905298fc8fa06"
+    },
+    {
+      "bytes": 432170,
+      "columns": [
+        "date",
+        "specialty",
+        "new_patient_slots",
+        "reserved_slots"
+      ],
+      "path": "followup/capacity.csv",
+      "rows": 14742,
+      "sha256": "8ac24f7259b34b210f8b51f48d6d38fd8041789663d5a33507d12182cdd24a3d"
+    },
+    {
+      "bytes": 676864,
+      "columns": [
+        "complaint_id",
+        "referral_id",
+        "received_date",
+        "theme",
+        "patient_account"
+      ],
+      "path": "followup/complaints.csv",
+      "rows": 5289,
+      "sha256": "5bd7c57f5e7f6495be29f9141faf01b3fc525ae21932a7a51cf8e26e938609b0"
+    },
+    {
+      "bytes": 108466083,
+      "columns": [
+        "event_id",
+        "referral_id",
+        "occurred_date",
+        "recorded_date",
+        "event_type",
+        "owner",
+        "detail"
+      ],
+      "path": "followup/events.csv",
+      "rows": 1329989,
+      "sha256": "c7d1493482dbf96eee70cef26f0b46f9ae7801a1eb3bb25e8c64fb9a71364975"
+    },
+    {
+      "bytes": 14717369,
+      "columns": [
+        "referral_id",
+        "patient_id",
+        "order_date",
+        "source_site",
+        "source_type",
+        "specialty",
+        "priority",
+        "travel_minutes",
+        "inherited",
+        "record_available_date"
+      ],
+      "path": "followup/referrals.csv",
+      "rows": 152000,
+      "sha256": "99580e13678817a9f7d6426dbe23e5c6672f73cf2d07352383239c63c073efd3"
+    },
+    {
+      "bytes": 5390019,
+      "columns": [
+        "appointment_id",
+        "referral_id",
+        "booked_date",
+        "appointment_date",
+        "outcome",
+        "outcome_recorded_date"
+      ],
+      "path": "initial/appointments.csv",
+      "rows": 78503,
+      "sha256": "f1bdfe3cae252dc745943e0f8538f4817f5fb933af72584ebc4e703f54f9619a"
+    },
+    {
+      "bytes": 72082,
+      "columns": [
+        "audit_id",
+        "referral_id",
+        "review_date",
+        "finding",
+        "evidence_source",
+        "care_date"
+      ],
+      "path": "initial/audit.csv",
+      "rows": 792,
+      "sha256": "24aa124348a3626223282d5d4c52f456418d36a4bd4660d5e370d2ec0fd37af8"
+    },
+    {
+      "bytes": 288844,
+      "columns": [
+        "date",
+        "specialty",
+        "new_patient_slots",
+        "reserved_slots"
+      ],
+      "path": "initial/capacity.csv",
+      "rows": 9855,
+      "sha256": "3d044848b23ec42194297d6e46c78210417062536ac07c0c1d9ba96123067dbd"
+    },
+    {
+      "bytes": 437281,
+      "columns": [
+        "complaint_id",
+        "referral_id",
+        "received_date",
+        "theme",
+        "patient_account"
+      ],
+      "path": "initial/complaints.csv",
+      "rows": 3423,
+      "sha256": "89206dbaf6bf205362718d18d293a7edea5a5b8dcfb58b9f07a59f0e6e483a65"
+    },
+    {
+      "bytes": 69116865,
+      "columns": [
+        "event_id",
+        "referral_id",
+        "occurred_date",
+        "recorded_date",
+        "event_type",
+        "owner",
+        "detail"
+      ],
+      "path": "initial/events.csv",
+      "rows": 843169,
+      "sha256": "7f97d5fd50c95acc74d21500f50e0b5c0e3aaf491b112afe9116fcfa0a5b86ea"
+    },
+    {
+      "bytes": 9894116,
+      "columns": [
+        "referral_id",
+        "patient_id",
+        "order_date",
+        "source_site",
+        "source_type",
+        "specialty",
+        "priority",
+        "travel_minutes",
+        "inherited",
+        "record_available_date"
+      ],
+      "path": "initial/referrals.csv",
+      "rows": 102187,
+      "sha256": "9b13b346b869b52b5fd34ad8b0e21f1e8a4ec2dffe9d147837ca3e65481693cf"
+    },
+    {
+      "bytes": 6817880,
+      "columns": [
+        "appointment_id",
+        "referral_id",
+        "booked_date",
+        "appointment_date",
+        "outcome",
+        "outcome_recorded_date"
+      ],
+      "path": "investigation/appointments.csv",
+      "rows": 99309,
+      "sha256": "072580a5112303cd9f6a4014a8d7ee361bc6231cb527a4d1636047957cbc4210"
+    },
+    {
+      "bytes": 170161,
+      "columns": [
+        "audit_id",
+        "referral_id",
+        "review_date",
+        "finding",
+        "evidence_source",
+        "care_date"
+      ],
+      "path": "investigation/audit.csv",
+      "rows": 1802,
+      "sha256": "3578dfe78668667448bf10b823ac61d9233089b3b5a47d498cfb6bf00bcbfb37"
+    },
+    {
+      "bytes": 360111,
+      "columns": [
+        "date",
+        "specialty",
+        "new_patient_slots",
+        "reserved_slots"
+      ],
+      "path": "investigation/capacity.csv",
+      "rows": 12285,
+      "sha256": "9ceda37c02c49fc7320ac246101fe5e739d8d49284a8ab8511c4cacd6190d0a6"
+    },
+    {
+      "bytes": 562739,
+      "columns": [
+        "complaint_id",
+        "referral_id",
+        "received_date",
+        "theme",
+        "patient_account"
+      ],
+      "path": "investigation/complaints.csv",
+      "rows": 4399,
+      "sha256": "88a992fcb3202e38feca66b95f3be05eff19684b39d7bab25699d5fed4255f6d"
+    },
+    {
+      "bytes": 89415456,
+      "columns": [
+        "event_id",
+        "referral_id",
+        "occurred_date",
+        "recorded_date",
+        "event_type",
+        "owner",
+        "detail"
+      ],
+      "path": "investigation/events.csv",
+      "rows": 1094172,
+      "sha256": "53efd83c2de6815ec2b8d84865a0de9d9637463aa9748f858420e25ec63233fd"
+    },
+    {
+      "bytes": 12377723,
+      "columns": [
+        "referral_id",
+        "patient_id",
+        "order_date",
+        "source_site",
+        "source_type",
+        "specialty",
+        "priority",
+        "travel_minutes",
+        "inherited",
+        "record_available_date"
+      ],
+      "path": "investigation/referrals.csv",
+      "rows": 127837,
+      "sha256": "af6abec7b3796d6d9cc5ffbd82f30604cd7794e40d0eeb195457632575942c25"
+    },
+    {
+      "bytes": 432170,
+      "columns": [
+        "date",
+        "specialty",
+        "new_patient_slots",
+        "reserved_slots"
+      ],
+      "path": "reference/daily_capacity.csv",
+      "rows": 14742,
+      "sha256": "8ac24f7259b34b210f8b51f48d6d38fd8041789663d5a33507d12182cdd24a3d"
+    },
+    {
+      "bytes": 12003371,
+      "columns": [
+        "referral_id",
+        "admin_complete_date",
+        "clinical_ready_date",
+        "booked_date",
+        "care_date",
+        "terminal_date",
+        "outcome_at_end",
+        "outside_documented_date",
+        "pilot_delivered",
+        "coordination_minutes"
+      ],
+      "path": "reference/model_truth.csv",
+      "rows": 152000,
+      "sha256": "f2710506148f876ad079507f9515076e1df94303106cb92463e9e9238cae0883"
+    },
+    {
+      "bytes": 2795,
+      "path": "reference/summary.json",
+      "sha256": "f366d0c6473dc70e2d6c6c8a71f229c13016476b8ae10c6bba001efa70b8cb74"
+    }
+  ],
+  "observation_window": "2025-01-01 through 2026-06-30; inherited cases precede start",
+  "provenance": {
+    "classification": "synthetic",
+    "config": {
+      "affiliated_sites": 24,
+      "annual_referrals": 100000,
+      "audit_probability": 0.008,
+      "base_source_revision": "0de37a6a111305dedf95c9f1c54b1558556f20e5",
+      "centralization_date": "2025-07-01",
+      "clinical_days_per_year": 210,
+      "coordination_fte": 24,
+      "coordination_productive_hours_per_year": 1400,
+      "end_date": "2026-06-30",
+      "independent_practices": 60,
+      "inherited_episodes": 2000,
+      "initial_cutoff": "2025-12-31",
+      "investigation_cutoff": "2026-03-31",
+      "new_episodes": 150000,
+      "pilot": {
+        "additional_minutes_per_episode": 2,
+        "fidelity": 0.8,
+        "source_sites": [
+          "AP01",
+          "AP02",
+          "AP03",
+          "AP04"
+        ],
+        "specialties": [
+          "cardiology",
+          "gastroenterology"
+        ]
+      },
+      "pilot_date": "2026-04-01",
+      "primary_care_clinician_fte": 110,
+      "primary_care_visits_per_day": 18,
+      "seed": 20261105,
+      "source_weights": {
+        "affiliated_primary_care": 52,
+        "ed_followup": 6,
+        "independent_practice": 38,
+        "other_specialty": 4
+      },
+      "specialties": {
+        "allergy": [
+          1,
+          4,
+          0.12
+        ],
+        "bariatric_surgery": [
+          1,
+          4,
+          0.2
+        ],
+        "behavioral_health": [
+          1,
+          3,
+          0.2
+        ],
+        "cardiology": [
+          12,
+          37,
+          0.12
+        ],
+        "colorectal_surgery": [
+          1,
+          4,
+          0.15
+        ],
+        "dermatology": [
+          6,
+          20,
+          0.1
+        ],
+        "endocrinology": [
+          5,
+          13,
+          0.2
+        ],
+        "gastroenterology": [
+          10,
+          30,
+          0.22
+        ],
+        "general_surgery": [
+          4,
+          14,
+          0.13
+        ],
+        "geriatrics": [
+          1,
+          4,
+          0.18
+        ],
+        "gynecology": [
+          1,
+          4,
+          0.12
+        ],
+        "hematology": [
+          2,
+          7,
+          0.2
+        ],
+        "infectious_disease": [
+          1,
+          4,
+          0.23
+        ],
+        "nephrology": [
+          3,
+          10,
+          0.18
+        ],
+        "neurology": [
+          8,
+          21,
+          0.26
+        ],
+        "oncology": [
+          2,
+          7,
+          0.15
+        ],
+        "ophthalmology": [
+          4,
+          14,
+          0.08
+        ],
+        "orthopedics": [
+          12,
+          42,
+          0.1
+        ],
+        "otolaryngology": [
+          4,
+          14,
+          0.12
+        ],
+        "pain_medicine": [
+          2,
+          6,
+          0.2
+        ],
+        "physical_medicine": [
+          1,
+          4,
+          0.1
+        ],
+        "plastic_surgery": [
+          1,
+          4,
+          0.1
+        ],
+        "pulmonology": [
+          6,
+          18,
+          0.18
+        ],
+        "rheumatology": [
+          4,
+          10,
+          0.25
+        ],
+        "sleep_medicine": [
+          2,
+          6,
+          0.18
+        ],
+        "urology": [
+          4,
+          14,
+          0.12
+        ],
+        "vascular_surgery": [
+          1,
+          4,
+          0.15
+        ]
+      },
+      "start_date": "2025-01-01"
+    },
+    "lockfile_sha256": "052acc893143ee3ec872f10bde973d4f73602f2dc0da2acc401584c434398c79",
+    "python": "3.14.7",
+    "releases": {
+      "followup": "2026-06-30",
+      "initial": "2025-12-31",
+      "investigation": "2026-03-31"
+    },
+    "runtime_versions": {
+      "pyyaml": "6.0.3"
+    },
+    "source_revision": "0de37a6a111305dedf95c9f1c54b1558556f20e5",
+    "source_revision_note": "Working source hashes below identify changes beyond the base revision.",
+    "source_sha256": {
+      "config/network_v2.yml": "11a0422008077f76451772b796eb72410292fc557d10fe097d4fe3e1b9c3d600",
+      "model/network.py": "73258bcbfb8e2aa55396db0c493df55fc53213f5db710c9d610371a037626243"
+    }
+  },
+  "schema_version": 1,
+  "version": "2.0.0"
+}

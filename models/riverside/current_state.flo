@@ -1,0 +1,101 @@
+# FLO 0.5: timing profiles are first-class; primary selects the displayed mean.
+# No analysis_input is selected: this map does not model end-to-end elapsed time.
+# Durations are illustrative estimates; replace them with evidence for your process.
+
+spec_version: '0.1'
+process:
+  id: yellow_belt_current_state
+  name: Yellow Belt Current State
+  resources:
+  - id: Role name
+    name: Role name
+    kind: person
+steps:
+- id: start
+  name: Start
+  kind: start
+  description: Define the process trigger
+- id: step_1
+  name: Intake step
+  kind: task
+  performed_by:
+  - Role name
+  value_class: RNVA
+  cycle_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 5
+        unit: min
+    primary: mean
+  wait_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 2
+        unit: min
+    primary: mean
+- id: step_2
+  name: Review step
+  kind: task
+  performed_by:
+  - Role name
+  value_class: RNVA
+  cycle_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 8
+        unit: min
+    primary: mean
+  wait_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 24
+        unit: min
+    primary: mean
+- id: step_3
+  name: Service step
+  kind: task
+  performed_by:
+  - Role name
+  value_class: VA
+  cycle_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 12
+        unit: min
+    primary: mean
+  wait_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 10
+        unit: min
+    primary: mean
+- id: step_4
+  name: Completion step
+  kind: task
+  performed_by:
+  - Role name
+  value_class: RNVA
+  cycle_time:
+    basis: estimated
+    results:
+      mean:
+        method: mean
+        value: 4
+        unit: min
+    primary: mean
+- id: end
+  name: Stop
+  kind: end
+  description: Define the process endpoint

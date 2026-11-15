@@ -1,0 +1,61 @@
+"""Column identities for the Riverside linked v2 exchange."""
+
+TABLES = {
+    "referrals": [
+        "referral_id",
+        "patient_id",
+        "order_date",
+        "source_site",
+        "source_type",
+        "specialty",
+        "priority",
+        "travel_minutes",
+        "inherited",
+        "record_available_date",
+    ],
+    "events": [
+        "event_id",
+        "referral_id",
+        "occurred_date",
+        "recorded_date",
+        "event_type",
+        "owner",
+        "detail",
+    ],
+    "appointments": [
+        "appointment_id",
+        "referral_id",
+        "booked_date",
+        "appointment_date",
+        "outcome",
+        "outcome_recorded_date",
+    ],
+    "complaints": [
+        "complaint_id",
+        "referral_id",
+        "received_date",
+        "theme",
+        "patient_account",
+    ],
+    "audit": [
+        "audit_id",
+        "referral_id",
+        "review_date",
+        "finding",
+        "evidence_source",
+        "care_date",
+    ],
+    "capacity": ["date", "specialty", "new_patient_slots", "reserved_slots"],
+}
+TRUTH_FIELDS = [
+    "referral_id",
+    "admin_complete_date",
+    "clinical_ready_date",
+    "booked_date",
+    "care_date",
+    "terminal_date",
+    "outcome_at_end",
+    "outside_documented_date",
+    "pilot_delivered",
+    "coordination_minutes",
+]

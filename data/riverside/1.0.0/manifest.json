@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "case_id": "riverside",
+  "version": "1.0.0",
+  "data_schema": "riverside-preserved-v1",
+  "observation_window": "2025-10-01 through 2026-03-31 referral order dates",
+  "provenance": {
+    "baseline_source_commit": "9f17da13b6fcc9d3de576d72d59786a213bc534c",
+    "baseline_lockfile_sha256": "089fd21d9855fb80b17263ffe61e28358d65bbdde97cd3daa3952db8899afcf8",
+    "baseline_receipt": "docs/audits/case-refactor-baseline-2026-11-03/README.md",
+    "classification": "synthetic",
+    "generation": {
+      "seed": 20260617,
+      "row_count": 1484,
+      "start_date": "2025-10-01",
+      "end_date": "2026-03-31"
+    },
+    "runtime_versions": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "polars": "2.1.0",
+      "simpy": "4.1.2",
+      "marimo": "0.25.2",
+      "scipy": "1.18.1",
+      "mpi-theme": "0.1.5",
+      "flo-lang": "0.5.0",
+      "lss4py": "0.2.0"
+    }
+  },
+  "files": [
+    {
+      "path": "riverside_referrals.csv",
+      "sha256": "6cce425b82d96e9bf10886368b174b5537c850e0a316501148d90efbdbb6e98f",
+      "bytes": 321017,
+      "columns": [
+        "referral_id",
+        "order_date",
+        "service_line",
+        "referral_source",
+        "priority",
+        "authorization_required",
+        "completeness_status",
+        "insurance_class",
+        "booking_pathway",
+        "status",
+        "status_update_days",
+        "first_contact_date",
+        "reminder_sent_date",
+        "scheduled_date",
+        "appointment_date",
+        "lead_time_days",
+        "booked_flag",
+        "visit_outcome",
+        "network_outcome",
+        "patient_barrier_reason",
+        "delay_reason"
+      ],
+      "rows": 1484
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "local candidate; not published",
+  "course_version": "0.1.0.dev2",
+  "dataset_version": "2.0.0",
+  "parent_manifest_sha256": "d60466ae4f185f23ae606b84d5b8433e7213a05dcaae00108653783e0bcdedb4",
+  "stages": {
+    "initial": {
+      "filename": "riverside-initial.zip",
+      "sha256": "e6118342d47f639e0a89b454bfd1a7d4f8bbdcbe46907a53d7e67c2215f8a08c",
+      "bytes": 8142205
+    },
+    "investigation": {
+      "filename": "riverside-investigation.zip",
+      "sha256": "f337a697e363507eccf6a76868f271cc5f24dce07bcafc7bee394ad70c708ced",
+      "bytes": 10478638
+    },
+    "followup": {
+      "filename": "riverside-followup.zip",
+      "sha256": "de4396a77c4a8085d1ca5fc2d233abdd2fb10911f00ff4c8d211b210eea9e09a",
+      "bytes": 12667246
+    }
+  }
+}

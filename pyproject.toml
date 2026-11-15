@@ -1,17 +1,49 @@
 [project]
 name = "mpi-yellow-belt-data"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.0.dev3"
+description = "Yellow Belt Riverside case resources"
 readme = "README.md"
-authors = [
-    { name = "shanewilkins", email = "shane@wilkinsadvisors.com" }
-]
-requires-python = ">=3.12"
-dependencies = []
+authors = [{name = "shanewilkins", email = "shane@wilkinsadvisors.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.15,<3.16"
+dependencies = ["pyyaml>=6,<7", "pydantic>=2.14,<3"]
+
+[project.optional-dependencies]
+learner = ["lss4py==0.2.0", "marimo[recommended]>=0.25,<1", "polars>=1.43.2", "flo-lang==0.5.0", "numpy>=2,<3", "scipy>=1.17,<2", "matplotlib>=3,<4"]
+validation = ["pandera[polars]>=0.35,<0.37", "polars>=1.43.2"]
+generation = ["pandera[polars]>=0.35,<0.37", "polars>=1.43.2"]
 
 [project.scripts]
-mpi-yellow-belt-data = "mpi_yellow_belt_data:main"
+mpi-yellow-belt-data = "mpi_yellow_belt_data.cli:main"
 
 [build-system]
-requires = ["uv_build>=0.13.7,<0.14.0"]
-build-backend = "uv_build"
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mpi_yellow_belt_data"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"data/riverside/1.0.0" = "mpi_yellow_belt_data/_data/riverside/1.0.0"
+"notebooks" = "mpi_yellow_belt_data/_notebooks"
+"models" = "mpi_yellow_belt_data/_models"
+"LICENSE.md" = "mpi_yellow_belt_data/_assets/LICENSE.md"
+"docs" = "mpi_yellow_belt_data/_docs"
+"releases" = "mpi_yellow_belt_data/_releases"
+
+[dependency-groups]
+dev = ["jsonschema>=4.26,<5", "pytest>=9,<10", "ruff>=0.17,<1", "ty>=0.0.104,<0.1", "tach>=0.35.3,<1", "pre-commit>=4.6,<5"]
+
+[tool.ruff]
+target-version = "py315"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ty.environment]
+python-version = "3.15"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]

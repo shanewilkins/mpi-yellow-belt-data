@@ -1,0 +1,6 @@
+referral_id,patient_id,order_date,source_site,source_type,specialty,priority,travel_minutes,inherited,record_available_date
+RV2-0001810,PT0050314,2024-12-22,AP21,affiliated_primary_care,cardiology,routine,157,1,2025-01-01
+RV2-0002001,PT0028852,2025-01-01,ED01,ed_followup,cardiology,routine,74,0,2025-01-01
+RV2-0016469,PT0108113,2025-02-18,IP12,independent_practice,neurology,routine,69,0,2025-02-18
+RV2-0051638,PT0053753,2025-07-01,IP03,independent_practice,gastroenterology,routine,39,0,2025-07-01
+RV2-0072213,PT0011886,2025-09-16,AP02,affiliated_primary_care,rheumatology,routine,36,0,2025-09-16

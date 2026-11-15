@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "course_version": "0.1.0.dev3",
+  "state": "local migration candidate; not published",
+  "python_minor": "3.15",
+  "book_compatibility": "preserved Riverside v1 publication defaults; explicit v2 APIs",
+  "investigations": [
+    "notebooks/riverside/investigate.py",
+    "notebooks/riverside/a3_v1.py"
+  ],
+  "evidence": {
+    "legacy": "riverside/1.0.0",
+    "staged": "riverside/2.0.0",
+    "stages": "releases/riverside/learner-stages.json"
+  },
+  "source_sha256": {
+    "src/mpi_yellow_belt_data/__init__.py": "52e06c80f312c65f76bb8b37aa7caad6674f358e8a716eb0b9a071d06bf41b54",
+    "src/mpi_yellow_belt_data/acquisition.py": "da0c81830f57ebd2ad44957ab852060d4d912668cb8526ede0ddf4c9349b2d49",
+    "src/mpi_yellow_belt_data/cases/__init__.py": "52e06c80f312c65f76bb8b37aa7caad6674f358e8a716eb0b9a071d06bf41b54",
+    "src/mpi_yellow_belt_data/cases/riverside/__init__.py": "52e06c80f312c65f76bb8b37aa7caad6674f358e8a716eb0b9a071d06bf41b54",
+    "src/mpi_yellow_belt_data/cases/riverside/case.yml": "79b87448253c6458f0815d5ae2706841dfefd22ffad26e210d3e7b4def20c133",
+    "src/mpi_yellow_belt_data/cases/riverside/config/baseline.yml": "5d4b7e9ba08a745e36efb88a82259fd617dcb0c51858e2e1bf4ac696adb53f90",
+    "src/mpi_yellow_belt_data/cases/riverside/config/network_v2.yml": "11a0422008077f76451772b796eb72410292fc557d10fe097d4fe3e1b9c3d600",
+    "src/mpi_yellow_belt_data/cases/riverside/model/__init__.py": "52e06c80f312c65f76bb8b37aa7caad6674f358e8a716eb0b9a071d06bf41b54",
+    "src/mpi_yellow_belt_data/cases/riverside/model/evidence.py": "13dbf845daf99d60054708a688fdf1d29b2edc5bd42c53f47f9a6d8201fba9dc",
+    "src/mpi_yellow_belt_data/cases/riverside/model/network.py": "56761917badc57b2d41d818895c0d5011d1c60f7b0c4ab1cc8cc66f481ce3347",
+    "src/mpi_yellow_belt_data/cases/riverside/model/referrals.py": "e9908fae57c0cef4f77ee067371969e5ab3a3522c4ac059427f1726f5a3e4253",
+    "src/mpi_yellow_belt_data/catalog.py": "44a47729f58f87d376c93f6af969b4d82c9f8943dff6b6d5cbf57fc868aa9f6f",
+    "src/mpi_yellow_belt_data/cli.py": "697109d9d153ef4acbf52f361f243760a4d021291182a174797fb784e41c1e15",
+    "src/mpi_yellow_belt_data/contracts.py": "89922408f082cf96799fe8acd0459172be4438a7058ad329c49eb66319efcaad",
+    "src/mpi_yellow_belt_data/generation.py": "6651fa9bc7484971c61a8a0608836905b5a8d537bc656ecc03cfb9a88d4ebdd3",
+    "src/mpi_yellow_belt_data/reference/__init__.py": "f79f283e2976356ab8b70fbc235ada0a62e32fb415fb66a2113003dcb05f8150",
+    "src/mpi_yellow_belt_data/reference/readout.py": "8ce0da6781e5b25f5c8019dc64622f530e70cf68fbe60a475fd87d447eea3d8a",
+    "src/mpi_yellow_belt_data/resources.py": "8cfdbcb958ec509e6d0fb9d51c1d75e90b15bd6f26f2ba97e1c83460e1aa0878",
+    "src/mpi_yellow_belt_data/schemas/case-v1.json": "da3ab410de212128c8376ab624064b4e852d5d25a205414aa0e0cd5d2e0faf49",
+    "src/mpi_yellow_belt_data/schemas/dataset-v1.json": "daab3870ffe3f559cb278ab8b77e0ff9a213c233b6529b9dc3990e56f36bb2e3",
+    "src/mpi_yellow_belt_data/schemas/riverside-config-v1.json": "0a9bd863087219308959dce842b9f8587661f650f683ba77f013cfd64db37b09",
+    "src/mpi_yellow_belt_data/schemas/riverside-network-config-v2.json": "a4242dff7a162821d1c786a12e4aab7a4a098631c42294bc195c504bcf7668f4",
+    "src/mpi_yellow_belt_data/schemas/riverside-network-dataset-v2.json": "0c5514a8d9a1c20c27edc398ffde0180633237ce51835936314eacd7352f267b",
+    "src/mpi_yellow_belt_data/schemas/yellow-belt-case-v1.json": "3917fc423ecb87427eb0eaec49cad70d96c99d30e180cd00643dcdef9739d9d6",
+    "src/mpi_yellow_belt_data/schemas/yellow-belt-dataset-v1.json": "4c8fd0118c184e61accef07a461045f63b93da8932f38793afbcae54f536d00d",
+    "src/mpi_yellow_belt_data/table_validation.py": "7391f3e2787f3f12b49590fd465ce7f41bed23e800ab275e645d30cb61793f42",
+    "src/mpi_yellow_belt_data/table_validation_v2.py": "a65dd70b818fddc2771696ee63b8b8c5520d4528c4708935bb7a0a1813ab9fed",
+    "src/mpi_yellow_belt_data/tables_v2.py": "4360baa08ac79adc3e7d544026ad8e50e408b911d0af4d40f316fefb3ebabab6",
+    "src/mpi_yellow_belt_data/workspaces.py": "01f2c66f04643e1b063812301f395f60fcb5f438a4d1984209dcce364604a143"
+  },
+  "compatibility_note": "Reuses the unchanged dev2-produced stage archives; fixes personal re-export of their backup receipt."
+}

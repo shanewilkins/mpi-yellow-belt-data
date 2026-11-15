@@ -1,0 +1,202 @@
+{
+  "$defs": {
+    "PilotConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "additional_minutes_per_episode": {
+          "minimum": 0,
+          "title": "Additional Minutes Per Episode",
+          "type": "number"
+        },
+        "fidelity": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Fidelity",
+          "type": "number"
+        },
+        "source_sites": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Source Sites",
+          "type": "array"
+        },
+        "specialties": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Specialties",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_sites",
+        "specialties",
+        "fidelity",
+        "additional_minutes_per_episode"
+      ],
+      "title": "PilotConfig",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "affiliated_sites": {
+      "exclusiveMinimum": 0,
+      "title": "Affiliated Sites",
+      "type": "integer"
+    },
+    "annual_referrals": {
+      "exclusiveMinimum": 0,
+      "title": "Annual Referrals",
+      "type": "integer"
+    },
+    "audit_probability": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Audit Probability",
+      "type": "number"
+    },
+    "base_source_revision": {
+      "pattern": "^[a-f0-9]{40}$",
+      "title": "Base Source Revision",
+      "type": "string"
+    },
+    "centralization_date": {
+      "title": "Centralization Date",
+      "type": "string"
+    },
+    "clinical_days_per_year": {
+      "exclusiveMinimum": 0,
+      "title": "Clinical Days Per Year",
+      "type": "integer"
+    },
+    "coordination_fte": {
+      "exclusiveMinimum": 0,
+      "title": "Coordination Fte",
+      "type": "integer"
+    },
+    "coordination_productive_hours_per_year": {
+      "exclusiveMinimum": 0,
+      "title": "Coordination Productive Hours Per Year",
+      "type": "integer"
+    },
+    "end_date": {
+      "title": "End Date",
+      "type": "string"
+    },
+    "independent_practices": {
+      "exclusiveMinimum": 0,
+      "title": "Independent Practices",
+      "type": "integer"
+    },
+    "inherited_episodes": {
+      "minimum": 0,
+      "title": "Inherited Episodes",
+      "type": "integer"
+    },
+    "initial_cutoff": {
+      "title": "Initial Cutoff",
+      "type": "string"
+    },
+    "investigation_cutoff": {
+      "title": "Investigation Cutoff",
+      "type": "string"
+    },
+    "new_episodes": {
+      "exclusiveMinimum": 0,
+      "title": "New Episodes",
+      "type": "integer"
+    },
+    "pilot": {
+      "$ref": "#/$defs/PilotConfig"
+    },
+    "pilot_date": {
+      "title": "Pilot Date",
+      "type": "string"
+    },
+    "primary_care_clinician_fte": {
+      "exclusiveMinimum": 0,
+      "title": "Primary Care Clinician Fte",
+      "type": "integer"
+    },
+    "primary_care_visits_per_day": {
+      "exclusiveMinimum": 0,
+      "title": "Primary Care Visits Per Day",
+      "type": "integer"
+    },
+    "seed": {
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "source_weights": {
+      "additionalProperties": {
+        "exclusiveMinimum": 0,
+        "type": "integer"
+      },
+      "propertyNames": {
+        "enum": [
+          "affiliated_primary_care",
+          "independent_practice",
+          "ed_followup",
+          "other_specialty"
+        ]
+      },
+      "title": "Source Weights",
+      "type": "object"
+    },
+    "specialties": {
+      "additionalProperties": {
+        "items": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "maxItems": 3,
+        "minItems": 3,
+        "type": "array"
+      },
+      "minProperties": 1,
+      "title": "Specialties",
+      "type": "object"
+    },
+    "start_date": {
+      "title": "Start Date",
+      "type": "string"
+    }
+  },
+  "required": [
+    "seed",
+    "base_source_revision",
+    "annual_referrals",
+    "new_episodes",
+    "inherited_episodes",
+    "start_date",
+    "centralization_date",
+    "initial_cutoff",
+    "investigation_cutoff",
+    "pilot_date",
+    "end_date",
+    "affiliated_sites",
+    "independent_practices",
+    "primary_care_clinician_fte",
+    "primary_care_visits_per_day",
+    "clinical_days_per_year",
+    "coordination_fte",
+    "coordination_productive_hours_per_year",
+    "source_weights",
+    "specialties",
+    "pilot",
+    "audit_probability"
+  ],
+  "title": "NetworkConfig",
+  "type": "object"
+}

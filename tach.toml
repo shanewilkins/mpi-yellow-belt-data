@@ -1,0 +1,51 @@
+source_roots = ["src"]
+root_module = "forbid"
+exact = true
+ignore_type_checking_imports = false
+forbid_circular_dependencies = true
+
+[[modules]]
+path = "mpi_yellow_belt_data"
+depends_on = []
+[[modules]]
+path = "mpi_yellow_belt_data.contracts"
+depends_on = []
+[[modules]]
+path = "mpi_yellow_belt_data.catalog"
+depends_on = ["mpi_yellow_belt_data.contracts"]
+[[modules]]
+path = "mpi_yellow_belt_data.resources"
+depends_on = ["mpi_yellow_belt_data.catalog"]
+[[modules]]
+path = "mpi_yellow_belt_data.tables_v2"
+depends_on = []
+[[modules]]
+path = "mpi_yellow_belt_data.cases"
+depends_on = []
+[[modules]]
+path = "mpi_yellow_belt_data.cases.riverside.model.network"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.contracts", "mpi_yellow_belt_data.resources", "mpi_yellow_belt_data.tables_v2", "mpi_yellow_belt_data.table_validation_v2"]
+[[modules]]
+path = "mpi_yellow_belt_data.workspaces"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.contracts", "mpi_yellow_belt_data.resources"]
+[[modules]]
+path = "mpi_yellow_belt_data.cases.riverside.model.evidence"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.contracts", "mpi_yellow_belt_data.resources", "mpi_yellow_belt_data.tables_v2", "mpi_yellow_belt_data.workspaces"]
+[[modules]]
+path = "mpi_yellow_belt_data.table_validation_v2"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.cases.riverside.model.evidence", "mpi_yellow_belt_data.tables_v2"]
+[[modules]]
+path = "mpi_yellow_belt_data.reference"
+depends_on = []
+[[modules]]
+path = "mpi_yellow_belt_data.acquisition"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.cases.riverside.model.evidence", "mpi_yellow_belt_data.resources"]
+[[modules]]
+path = "mpi_yellow_belt_data.generation"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.cases", "mpi_yellow_belt_data.contracts", "mpi_yellow_belt_data.table_validation"]
+[[modules]]
+path = "mpi_yellow_belt_data.table_validation"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.cases"]
+[[modules]]
+path = "mpi_yellow_belt_data.cli"
+depends_on = ["mpi_yellow_belt_data.catalog", "mpi_yellow_belt_data.resources", "mpi_yellow_belt_data.workspaces", "mpi_yellow_belt_data.acquisition", "mpi_yellow_belt_data.cases.riverside.model.network", "mpi_yellow_belt_data.cases.riverside.model.evidence", "mpi_yellow_belt_data.table_validation_v2", "mpi_yellow_belt_data.generation", "mpi_yellow_belt_data.table_validation"]
