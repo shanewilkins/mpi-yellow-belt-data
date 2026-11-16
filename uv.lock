@@ -1011,7 +1011,7 @@ wheels = [
 
 [[package]]
 name = "mpi-yellow-belt-data"
-version = "0.1.0.dev3"
+version = "0.1.0a1"
 source = { editable = "." }
 dependencies = [
     { name = "pydantic" },

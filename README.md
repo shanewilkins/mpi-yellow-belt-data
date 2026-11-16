@@ -2,19 +2,21 @@
 
 This repository owns Riverside's simulation, evidence definitions, documentation, investigation starters, and FLO model.
 The book consumes a separately built, hash-pinned package; students use a tagged Git checkout and its committed lockfile.
-The current source and stage archives are local migration candidates; a public course tag and download locations have not yet been published.
+This is the `v0.1.0a1` preview release.
+It supports the verified Riverside workflow; it is not a claim that the entire Yellow Belt curriculum is ready for teaching.
 
 ## Student workspace
 
-Clone the selected course tag when it is published, then prepare its environment:
+Clone the preview tag and prepare its locked environment:
 
 ```console
-git clone --branch <course-tag> https://github.com/shanewilkins/mpi-yellow-belt-data.git
+git clone --branch v0.1.0a1 https://github.com/shanewilkins/mpi-yellow-belt-data.git
 cd mpi-yellow-belt-data
 uv sync --locked --extra learner --no-dev
 ```
 
-Obtain the selected dated evidence archive explicitly from the course release.
+Obtain the selected dated evidence archive explicitly from the [preview release](https://github.com/shanewilkins/mpi-yellow-belt-data/releases/tag/v0.1.0a1).
+Begin with `riverside-initial.zip`; later extracts remain separate investigation stages.
 The small `releases/riverside/learner-stages.json` index pins each archive's checksum.
 Initial archives contain only the initial six tables, supporting notes, and starter, excluding later extracts and contributor truth.
 

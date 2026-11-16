@@ -1,6 +1,6 @@
 [project]
 name = "mpi-yellow-belt-data"
-version = "0.1.0.dev3"
+version = "0.1.0a1"
 description = "Yellow Belt Riverside case resources"
 readme = "README.md"
 authors = [{name = "shanewilkins", email = "shane@wilkinsadvisors.com"}]
